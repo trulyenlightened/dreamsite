@@ -184,7 +184,7 @@ ul {
 
 p {
   font-size: 15px;
-  line-height: 25px;
+  line-height: 20px;
   color: #4a4a4a;
 }
 
@@ -340,7 +340,8 @@ header
 }
 
 .background-header .main-nav .nav > li:hover > a {
-  color: #f55858 !important;
+      background: linear-gradient( 135deg, rgba(0, 136, 232, 1) 0%, rgba(0, 182, 198, 1) 0%, rgba(0, 136, 232, 1) 100% );
+    color: #fff!important;
 }
 
 .background-header .main-nav .nav > li > ul > li:hover > a {
@@ -425,7 +426,11 @@ header
 }
 
 .header-area .main-nav .nav li:hover a {
-  color: #f55858;
+     color: #04a7cf;
+    background-color: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -547,7 +552,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #0096de;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -567,7 +572,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #0096de;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -612,7 +617,7 @@ header
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
+  background-color: #0096de;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -624,7 +629,7 @@ header
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #1e1e1e;
+  background-color: #0096de;
 }
 
 .header-area.header-sticky {
@@ -706,7 +711,7 @@ header
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #fff !important;
+    /*background: #fff !important;*/
     color: #3b566e !important;
   }
   .header-area .main-nav .nav li a:hover {
@@ -847,7 +852,7 @@ TRY IT ... with or without CENTER CENTER
 
 @media (max-width: 765px) {
   .welcome-area {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
   .welcome-area .header-text {
     top: 55% !important;
@@ -885,15 +890,22 @@ about
 ---------------------------------------------
 */
 
-#about,section#process {
-  padding: 60px 0px;
+section#process {
+  padding: 50px 0px;
 
 }
+#about {
+  padding: 50px 0px;
 
+}
 @media (max-width: 765px) {
   #about {
-    padding: 20px 0px 120px 0px;
+    padding: 20px 0px 40px 0px;
   }
+  #about,section#process {
+  padding: 10px 0px;
+
+}
 }
 
 #about .right-text {
@@ -913,6 +925,7 @@ about
 }
 section#about img {
     padding: 40px;
+    max-width: 70%;
 }
 #about h5,
 #process h5 {
@@ -950,6 +963,9 @@ section#about img {
 }
 .right-image img {
     padding: 30px;
+
+    max-width: 80%;
+
 }
 /*
 ---------------------------------------------
@@ -957,6 +973,7 @@ services
 ---------------------------------------------
 */
 #services {
+      margin-top: 50px;
   position: relative;
   padding: 50px 0px 50px 0px;
   background: rgba(0, 136, 232, 1);
@@ -976,7 +993,7 @@ services
   background: -webkit-linear-gradient(
     -45deg,
     rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
+704    rgba(0, 182, 198, 1) 0%,
     rgba(0, 136, 232, 1) 100%
   );
   background: -o-linear-gradient(
@@ -1146,7 +1163,7 @@ accordions
 */
 
 #frequently-question {
-  padding: 120px 0px;
+  padding: 70px 0px;
 }
 
 #frequently-question .section-heading p {
@@ -1184,9 +1201,17 @@ accordions
   font-weight: 500;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 767px) {
+  #frequently-question{
+    padding: 40px 0px;
+  }
   #frequently-question .left-text {
     margin-bottom: 60px;
+    margin-top: 50px;
+  }
+  .right-image img,
+  section#about img{
+    max-width: 100%;
   }
 }
 
@@ -1204,6 +1229,9 @@ accordions
   .accordion-head {
     padding: 1rem;
     font-size: 1.2rem;
+  }
+  section#process .right-image {
+    order: 2;
   }
 }
 .accordion-head .icon {
@@ -1270,7 +1298,7 @@ contact
 }
 
 .contact-form {
-  padding: 100px;
+  padding: 100px 75px;
   background: rgba(0, 136, 232, 1);
   background: -moz-linear-gradient(
     -45deg,
@@ -1321,7 +1349,7 @@ contact
 
 .contact-form input,
 .contact-form textarea {
-  color: #777;
+  color: #fff;
   font-size: 14px;
   border: none;
   width: 100%;
@@ -1507,5 +1535,13 @@ preloader
   }
   100% {
     opacity: 0;
+  }
+}
+@media(max-width: 360px){
+  .welcome-area .header-text img{
+    width: 62%;
+  }
+  .welcome-area .header-text{
+    top:62%;
   }
 }

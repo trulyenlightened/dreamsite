@@ -1,84 +1,50 @@
 <?php
-   // request variables // important
-   $from = $_REQUEST["from"];
-   $emaila = $_REQUEST["emaila"];
-   $filea = $_REQUEST["filea"];
 
-   $to = "xyz@somedomain.com";
-         $subject = "This is subject";
+if(isset($_POST['submitEmail']) && $_POST['submitEmail']=='submit')
+{
+ 
+   $name=$_POST['name'];
+   $email=$_POST['email'];
+   $message=trim($_POST['message']);
 
-         $message = "<b>This is HTML message.</b>";
-         $message .= "<h1>This is headline.</h1>";
+   $senderheaders  = "From: $email\r\n";
+   $senderheaders .= "Content-type: text/html\r\n";
 
-         $header = "From:abc@somedomain.com \r\n";
-         $header .= "Cc:afgh@somedomain.com \r\n";
-         $header .= "MIME-Version: 1.0\r\n";
-         $header .= "Content-type: text/html\r\n";
+   $subject="Inquiry";
+   $sendId='kirit.jbs@gmail.com';
+   $textTosend='
+     <table width="700px" align="center">
+        <tr>
+            <td colspan="3" align="center"  class="title" height="30px"><strong>Customer Inquiry </strong></td>
+        </tr>
+         
+        <tr>
+           <td>
+           <strong>Name</strong>  </td>
+           <td>
+           <strong>Message</strong>  </td>
+           <td>
+           <strong>Email</strong>  </td>
+        </tr>
+        <tr>
+           <td >
+           <strong>'.$name.'</strong>  </td>
+           <td >
+           <strong>'.$message.'</strong>  </td>
+           <td >
+           <strong>'.$email.'</strong>  </td>
+          </tr>
+      
+     </table>
+     <br><br>';
 
-         $retval = mail ($to,$subject,$message,$header);
+   
+      $retval =mail($sendId,$subject,$textTosend,$senderheaders);
 
-         if( $retval == true ) {
-            echo "Message sent successfully...";
-         }else {
-            echo "Message could not be sent...";
-         }
-   if ($filea) {
-      function mail_attachment ($from , $to, $subject, $message, $attachment){
-         $fileatt = $attachment; // Path to the file
-         $fileatt_type = "application/octet-stream"; // File Type
-
-         $start = strrpos($attachment, '/') == -1 ?
-            strrpos($attachment, '//') : strrpos($attachment, '/')+1;
-
-         $fileatt_name = substr($attachment, $start,
-            strlen($attachment)); // Filename that will be used for the
-            file as the attachment
-
-         $email_from = $from; // Who the email is from
-         $subject = "New Attachment Message";
-
-         $email_subject =  $subject; // The Subject of the email
-         $email_txt = $message; // Message that the email has in it
-         $email_to = $to; // Who the email is to
-
-         $headers = "From: ".$email_from;
-         $file = fopen($fileatt,'rb');
-         $data = fread($file,filesize($fileatt));
-         fclose($file);
-
-         $msg_txt="\n\n You have recieved a new attachment message from $from";
-         $semi_rand = md5(time());
-         $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
-         $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . "
-            boundary=\"{$mime_boundary}\"";
-
-         $email_txt .= $msg_txt;
-
-         $email_message .= "This is a multi-part message in MIME format.\n\n" .
-            "--{$mime_boundary}\n" . "Content-Type:text/html;
-            charset = \"iso-8859-1\"\n" . "Content-Transfer-Encoding: 7bit\n\n" .
-            $email_txt . "\n\n";
-
-         $data = chunk_split(base64_encode($data));
-
-         $email_message .= "--{$mime_boundary}\n" . "Content-Type: {$fileatt_type};\n" .
-            " name = \"{$fileatt_name}\"\n" . //"Content-Disposition: attachment;\n" .
-            //" filename = \"{$fileatt_name}\"\n" . "Content-Transfer-Encoding:
-            base64\n\n" . $data . "\n\n" . "--{$mime_boundary}--\n";
-
-         $ok = mail($email_to, $email_subject, $email_message, $headers);
-
-         if($ok) {
-            echo "File Sent Successfully.";
-            unlink($attachment); // delete a file after attachment sent.
-         }else {
-            die("Sorry but the email could not be sent. Please go back and try again!");
-         }
+      if( $retval == true ) {
+         echo "Message sent successfully...";
+      }else {
+         echo "Message could not be sent...";
       }
-      move_uploaded_file($_FILES["filea"]["tmp_name"],
-         'temp/'.basename($_FILES['filea']['name']));
-
-      mail_attachment("$from", "youremailaddress@gmail.com",
-         "subject", "message", ("temp/".$_FILES["filea"]["name"]));
-   }
-?>
+}     
+  ?>

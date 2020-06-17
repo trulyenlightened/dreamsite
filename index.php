@@ -9,7 +9,7 @@
     <meta name="author" content="Template Mo">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Art Factory HTML CSS Template</title>
+    <title>Sanghavi Info Soft | Robotic Process Automation + AI + Web Developing</title>
 <!--
 
 ART FACTORY
@@ -46,9 +46,10 @@ primary color: #0096de
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** <a href="#" class="logo">Sanghavi Infosys</a>-->
-                        <div class="logo-block logo">
+                        <div class="logo-block logo"><a href="<?php echo $_SERVER['REQUEST_URI'];?>">
                           <img src="assets/images/white_logo_final.png" class="logo-img white-logo">
                           <img src="assets/images/color_logo_final.png" class="logo-img color-logo">
+                      </a>
                         </div>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -94,7 +95,7 @@ primary color: #0096de
                         <a href="#about" class="main-button-slider">Find Out More</a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                        <img src="assets/images/slider-icon.png" class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
+                        <img src="assets/images/Banner.png" class="rounded img-fluid d-block mx-auto" alt="Sanghavi Info Soft banner">
                     </div>
                 </div>
             </div>
@@ -109,7 +110,7 @@ primary color: #0096de
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                    <img src="assets/images/whoAreWe.png" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
                     <div class="left-heading">
@@ -135,13 +136,17 @@ primary color: #0096de
     <section class="section" id="process">
         <div class="container">
             <div class="row">
-                <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
+               
+                <div class="right-image col-lg-6 col-md-6 col-sm-6 mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                 <div class="left-text col-lg-6 col-md-6 col-sm-6 mobile-bottom-fix">
                     <div class="left-heading">
                         <h5>Our Process</h5>
                     </div>
 
-                    <ul>
-                        <li>
+                    <ul class="process-list">
+                      <li>
                             <img src="assets/images/about-icon-01.png" alt="">
                             <div class="text">
                                 <h6>Nulla ultricies risus quis risus</h6>
@@ -163,9 +168,6 @@ primary color: #0096de
                             </div>
                         </li>
                     </ul>
-                </div>
-                <div class="right-image col-lg-7 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
             </div>
         </div>
@@ -296,8 +298,61 @@ primary color: #0096de
 
                 <!-- ***** Contact Form Start ***** -->
                 <div class="col-lg-6 col-md-6 col-sm-12">
+                	<?php 
+                	$msg='';
+                	if(isset($_POST['submitEmail']) && $_POST['submitEmail']=='submit')
+					{
+
+						$name=$_POST['name'];
+						$email=$_POST['email'];
+						$message=trim($_POST['message']);
+
+						$senderheaders  = "From: $email\r\n";
+						$senderheaders .= "Content-type: text/html\r\n";
+
+						$subject="Inquiry";
+						$sendId='kirit.jbs@gmail.com';
+						$textTosend='
+						<table width="700px" align="center">
+						<tr>
+						    <td colspan="3" align="center"  class="title" height="30px"><strong>Customer Inquiry </strong></td>
+						</tr>
+						 
+						<tr>
+						   <td>
+						   <strong>Name</strong>  </td>
+						   <td>
+						   <strong>Message</strong>  </td>
+						   <td>
+						   <strong>Email</strong>  </td>
+						</tr>
+						<tr>
+						   <td >
+						   <strong>'.$name.'</strong>  </td>
+						   <td >
+						   <strong>'.$message.'</strong>  </td>
+						   <td >
+						   <strong>'.$email.'</strong>  </td>
+						  </tr>
+
+						</table>
+						<br><br>';
+
+
+						$retval =mail($sendId,$subject,$textTosend,$senderheaders);
+
+						if( $retval == true ) {
+						 $msg= "<div class='responseMsg'>Message sent successfully...</div>";
+						}else {
+						 $msg= "<div class='errorMsg'>Message could not be sent...</div>";
+						}
+					}    
+						?>
                     <div class="contact-form">
-                        <form id="contact" action="emailScript.php" method="post">
+                    	<?php
+                    		echo $msg;
+                    	?>
+                        <form id="contact" action="index.php#contact-us" method="post">
                           <div class="row">
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
@@ -306,7 +361,7 @@ primary color: #0096de
                             </div>
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
-                                <input name="email" type="text" id="email" placeholder="E-mail" required="" class="contact-field">
+                                <input name="email" type="email" id="email" placeholder="E-mail" required="" class="contact-field">
                               </fieldset>
                             </div>
                             <div class="col-lg-12">
@@ -316,7 +371,8 @@ primary color: #0096de
                             </div>
                             <div class="col-lg-12">
                               <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Sumbit</button>
+                                <button type="submit" id="form-submit" name="submitEmail" value="submit" class="main-button">
+                                Sumbit</button>
                               </fieldset>
                             </div>
                           </div>
