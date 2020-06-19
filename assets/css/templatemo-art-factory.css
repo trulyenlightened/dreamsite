@@ -399,8 +399,8 @@ header
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .header-area .main-nav .nav li:last-child {
@@ -1030,6 +1030,7 @@ services
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
+      min-height: 373px;
 }
 
 @media screen and (max-width: 920px) {
@@ -1071,7 +1072,7 @@ services
 }
 
 .service-item .service-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: #1e1e1e;
   letter-spacing: 0.7px;
@@ -1082,10 +1083,10 @@ services
 
 .service-item p {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: #777;
   letter-spacing: 0.5px;
-  line-height: 25px;
+  line-height: 18px;
   position: relative;
   z-index: 2;
 }
@@ -1093,6 +1094,12 @@ services
 .service-item a.main-button {
   margin-top: 30px;
   display: inline-block;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 175px;
+     position: absolute;
 }
 
 .owl-carousel .owl-dots {
@@ -1172,6 +1179,7 @@ accordions
 
 #frequently-question .left-text {
   align-self: center !important;
+  padding-left: 25px;
 }
 
 #frequently-question .left-text h5 {
@@ -1186,7 +1194,7 @@ accordions
 #frequently-question .left-text p {
   margin-bottom: 30px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 22px;
   letter-spacing: 0.5px;
 }
 
@@ -1202,6 +1210,25 @@ accordions
 }
 
 @media (max-width: 767px) {
+  #toTopBtn{
+    bottom: 5px !important;
+  }
+  .logo-icon {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .quick-link h6, .social-links h6{
+    text-align: center;
+      
+        padding-bottom: 7px!important;
+  }
+  .col-md-4.quick-link, .col-md-4.social-links{
+      margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .col-md-4.quick-link ul {
+    text-align: center;
+  }
   #frequently-question{
     padding: 40px 0px;
   }
@@ -1396,12 +1423,12 @@ footer
 footer {
   background:rgb(244, 244, 244);
 
-  padding: 40px 0px;
+  padding: 70px 0px 30px;
 }
 
 footer .social {
   overflow: hidden;
-  text-align: right;
+  text-align: left;
 }
 
 footer .social li {
@@ -1436,12 +1463,13 @@ footer .social li a:hover {
 }
 
 footer .copyright {
-  margin-top: 0px;
+  margin-top: 15px;
   font-weight: 400;
   font-size: 15px;
   color: #0096de;
   letter-spacing: 0.88px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 @media (max-width: 991px) {

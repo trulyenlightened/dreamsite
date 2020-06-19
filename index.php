@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Template Mo">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title>Sanghavi Info Soft | Robotic Process Automation + AI + Web Developing</title>
 <!--
 
@@ -57,7 +57,7 @@ primary color: #0096de
                             <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#about">Who are we?</a></li>
                             <li class="scroll-to-section"><a href="#process">Our Process</a></li>
-                            <li class="scroll-to-section"><a href="#services">Services</a></li>
+                            <li class="scroll-to-section"><a href="#services">Our Work</a></li>
                             <li class="scroll-to-section"><a href="#frequently-question">Our Vision</a></li>
                             <!--<li class="submenu">
                                 <a href="javascript:;">Drop Down</a>
@@ -90,8 +90,8 @@ primary color: #0096de
             <div class="container">
                 <div class="row">
                     <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1>Art Factory is free <strong>for YOU</strong></h1>
-                        <p>This template is available for 100% free of charge on TemplateMo. Download, modify and use this for your business website.</p>
+                        <h1>Are you looking to build something?</h1>
+                        <p>You are at the right place, building digital products is our jam.</p>
                         <a href="#about" class="main-button-slider">Find Out More</a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
@@ -114,10 +114,10 @@ primary color: #0096de
                 </div>
                 <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
                     <div class="left-heading">
-                        <h5>Who are we?</h5>
+                        <h5>Who Are We?</h5>
                     </div>
                     <div class="left-text">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        <p>Sanghvi Infosoft is a research and tech consultancy company that specializes in building solutions for complex problems.We are based in ahmedabad and work remotely with our clients. Our core expertise are mobile application and web application development. Keeping an eye and curiosity towards upcoming technology we are exploring opportunities in the field of Artificial Intelligence and Block chain. </p>
 
                     </div>
                 </div>
@@ -147,24 +147,24 @@ primary color: #0096de
 
                     <ul class="process-list">
                       <li>
-                            <img src="assets/images/about-icon-01.png" alt="">
+                            <img src="assets/images/earIcon.png" alt="">
                             <div class="text">
-                                <h6>Nulla ultricies risus quis risus</h6>
-                                <p>You can use this website template for commercial or non-commercial purposes.</p>
+                                <h6>Listen</h6>
+                                <p>We investigate the problem from first principles, allowing us to quickly familiarize ourselves with the inner workings of various fields, and develop a comprehensive understanding of any problem.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="assets/images/about-icon-02.png" alt="">
+                            <img src="assets/images/thinkIcon.png" alt="">
                             <div class="text">
-                                <h6>Donec consequat commodo purus</h6>
-                                <p>You have no right to re-distribute this template as a downloadable ZIP file on any website.</p>
+                                <h6>Think</h6>
+                                <p>This is our favorite part. We’re a team of knowledge-lovers and problem-solvers who approach challenges with curiosity, seeing them as puzzles and meeting them with inspired ideas.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="assets/images/about-icon-03.png" alt="">
+                            <img src="assets/images/build.svg" alt="">
                             <div class="text">
-                                <h6>Sed placerat sollicitudin mauris</h6>
-                                <p>If you have any question or comment, please <a rel="nofollow" href="https://templatemo.com/contact">contact</a> us on TemplateMo.</p>
+                                <h6>Build</h6>
+                                <p>We have a great team helping us execute on great ideas. The more challenging the problem, the happier we are.</p>
                             </div>
                         </li>
                     </ul>
@@ -179,7 +179,7 @@ primary color: #0096de
     <section class="section" id="services">
         <div class="container">
           <div class="left-heading">
-              <h5>Our Services</h5>
+              <h5>Our Work</h5>
           </div>
             <div class="row">
                 <div class="owl-carousel owl-theme">
@@ -187,58 +187,36 @@ primary color: #0096de
                         <div class="icon">
                             <i><img src="assets/images/service-icon-01.png" alt=""></i>
                         </div>
-                        <h4 class="service-title">First Box Service</h4>
-                        <p>Aenean vulputate massa sed neque consectetur, ac fringilla quam aliquet. Sed a enim nec eros tempor cursus at id libero.</p>
-                        <a href="#" class="main-button">Read More</a>
+                        <h4 class="service-title">Velway</h4>
+                        <p>Helps the mechanics to get connected with vehicle users and increase customer base.</p>
+                        <a href="https://apps.apple.com/in/app/velway/id1489718186" target="_blank" class="main-button">Read More</a>
+                    </div>
+                   
+                    <div class="item service-item">
+                        <div class="icon">
+                            <i><img src="assets/images/service-icon-03.png" alt=""></i>
+                        </div>
+                        <h4 class="service-title">Main Hun na</h4>
+                        <p>A local grocery app solution.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.dirextion.meinhunna&hl=en_IN" target="_blank" class="main-button">Read More</a>
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-02.png" alt=""></i>
                         </div>
-                        <h4 class="service-title">Second Box Title</h4>
-                        <p>Pellentesque vitae urna ut nisi viverra tristique quis at dolor. In non sodales dolor, id egestas quam. Aliquam erat volutpat. </p>
-                        <a href="#" class="main-button">Discover More</a>
-                    </div>
-                    <div class="item service-item">
-                        <div class="icon">
-                            <i><img src="assets/images/service-icon-03.png" alt=""></i>
-                        </div>
-                        <h4 class="service-title">Third Title Box</h4>
-                        <p>Quisque finibus libero augue, in ultrices quam dictum id. Aliquam quis tellus sit amet urna tincidunt bibendum.</p>
-                        <a href="#" class="main-button">More Detail</a>
-                    </div>
-                    <div class="item service-item">
-                        <div class="icon">
-                            <i><img src="assets/images/service-icon-02.png" alt=""></i>
-                        </div>
-                        <h4 class="service-title">Fourth Service Box</h4>
-                        <p>Fusce sollicitudin feugiat risus, tempus faucibus arcu blandit nec. Duis auctor dolor eu scelerisque vestibulum.</p>
-                        <a href="#" class="main-button">Read More</a>
+                        <h4 class="service-title">TherapyFynd</h4>
+                        <p>Here We Helped build an Online Platform for therapy to conduct one to one video sessions with certified therapists.</p>
+                        <a href="https://therapyfynd.com/" target="_blank" class="main-button">Read More</a>
                     </div>
                     <div class="item service-item">
                         <div class="icon">
                             <i><img src="assets/images/service-icon-01.png" alt=""></i>
                         </div>
-                        <h4 class="service-title">Fifth Service Title</h4>
-                        <p>Curabitur aliquam eget tellus id porta. Proin justo sapien, posuere suscipit tortor in, fermentum mattis elit.</p>
-                        <a href="#" class="main-button">Discover</a>
+                        <h4 class="service-title">Find Your Round</h4>
+                        <p>A Social Media Platform that connects golfers to games near them. </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.dreamers.fyr" target="_blank" class="main-button">Read More</a>
                     </div>
-                    <div class="item service-item">
-                        <div class="icon">
-                            <i><img src="assets/images/service-icon-03.png" alt=""></i>
-                        </div>
-                        <h4 class="service-title">Sixth Box Title</h4>
-                        <p>Ut nibh velit, aliquam vitae pellentesque nec, convallis vitae lacus. Aliquam porttitor urna ut pellentesque.</p>
-                        <a href="#" class="main-button">Detail</a>
-                    </div>
-                    <div class="item service-item">
-                        <div class="icon">
-                            <i><img src="assets/images/service-icon-01.png" alt=""></i>
-                        </div>
-                        <h4 class="service-title">Seventh Title Box</h4>
-                        <p>Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio. Donec non quam.</p>
-                        <a href="#" class="main-button">Read More</a>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -272,8 +250,18 @@ primary color: #0096de
                 <div class="left-text col-lg-6 col-md-6 col-sm-12">
                     <h5>Our Vision</h5>
                     <div class="accordion-text">
-                        <p>Curabitur placerat diam in risus lobortis, laoreet porttitor est elementum. Nulla ultricies risus quis risus scelerisque, a aliquam tellus maximus. Cras pretium nulla ac convallis iaculis. Aenean bibendum erat vitae odio sodales, in facilisis tellus volutpat.</p>
-                        <p>Sed lobortis pellentesque magna ac congue. Suspendisse quis molestie magna, id eleifend ex. Ut mollis ultricies diam nec dictum. Morbi commodo hendrerit mi vel vulputate. Proin non tincidunt dui. Lorem ipsum dolor sit amet.</p>
+                       <div class="text">
+                                <h6>Startup booster.</h6>
+                                <p>Today every idea needs to be backed by appropriate technology. We as a company help provide fast and affordable solutions that a start up initially needs.</p>
+                        </div>
+                         <div class="text">
+                                <h6>A great culture</h6>
+                                <p>We strongly believe in keeping our employees happy and also bring them value in terms of learning,  We believe that great services come from happy minds.</p>
+                        </div>
+                         <div class="text">
+                               
+                                <p>We as  a company are driven by curiosity of knowledge and have a vision to explore the limits of technology to the fullest</p>
+                        </div>
 
                     </div>
                 </div>
@@ -300,22 +288,26 @@ primary color: #0096de
                 <div class="col-lg-6 col-md-6 col-sm-12">
                 	<?php 
                 	$msg='';
+                    $To='devansh@sanghviinfo.com';
                 	if(isset($_POST['submitEmail']) && $_POST['submitEmail']=='submit')
 					{
 
 						$name=$_POST['name'];
 						$email=$_POST['email'];
 						$message=trim($_POST['message']);
+                        $headers = "MIME-Version: 1.0" . "\r\n";
+                        $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
+                        $headers .= "From: $email" . "\r\n" .
+                        "Reply-To: $sendId" . "\r\n" .
+                        "X-Mailer: PHP/" . phpversion();
+						
 
-						$senderheaders  = "From: $email\r\n";
-						$senderheaders .= "Content-type: text/html\r\n";
-
-						$subject="Inquiry";
-						$sendId='kirit.jbs@gmail.com';
+						$subject="Sanghvi Infosoft - Contact ";
+						$sendId=$To;
 						$textTosend='
 						<table width="700px" align="center">
 						<tr>
-						    <td colspan="3" align="center"  class="title" height="30px"><strong>Customer Inquiry </strong></td>
+						    <td colspan="3" align="left"  class="title" height="30px"><strong>Customer Inquiry </strong></td>
 						</tr>
 						 
 						<tr>
@@ -327,19 +319,16 @@ primary color: #0096de
 						   <strong>Email</strong>  </td>
 						</tr>
 						<tr>
-						   <td >
-						   <strong>'.$name.'</strong>  </td>
-						   <td >
-						   <strong>'.$message.'</strong>  </td>
-						   <td >
-						   <strong>'.$email.'</strong>  </td>
+						   <td >  '.$name.'  </td>
+						   <td > '.$message.' </td>
+						   <td > '.$email.' </td>
 						  </tr>
 
 						</table>
 						<br><br>';
 
 
-						$retval =mail($sendId,$subject,$textTosend,$senderheaders);
+						$retval =mail($sendId,$subject,$textTosend,$headers);
 
 						if( $retval == true ) {
 						 $msg= "<div class='responseMsg'>Message sent successfully...</div>";
@@ -389,23 +378,42 @@ primary color: #0096de
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
+        	 <div class="row footer-links">
+        		<div class="col-md-4 logo-icon">
+        			<img class="footer-icon" src="assets/images/sanghvi-icon.png">
+			 	</div>
+			 	<div class="col-md-4 quick-link">
+			 		<div>
+	        			<h6> Quick Link</h6>
+						<ul>
+					      <li><a href="#">Terms &amp; Conditions</a></li>
+						 <li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+			 	</div>
+			 	<div class="col-md-4 social-links">
+			 		<div>
+			 			<h6> Social Link</h6>
+					 <ul class="social">
+	                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+	                <li><a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter"></i></a></li>
+	                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+                		</ul>
+			 		</div>
+        			
+			 	</div>
+			</div>
+			<hr/>
             <div class="row">
-                <div class="col-lg-7 col-md-12 col-sm-12">
-                    <p class="copyright">Copyright &copy; 2020 Sanghavi Info Soft. All Rights Reserved.</p>
-
-
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p class="copyright">Copyright &copy; 2020 Sanghvi Infosoft . All Rights Reserved.</p>
                 </div>
-                <div class="col-lg-5 col-md-12 col-sm-12">
-                    <ul class="social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-
-                    </ul>
-                </div>
+                
             </div>
         </div>
     </footer>
+
     <div  id="toTopBtn">
       <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
     </div>

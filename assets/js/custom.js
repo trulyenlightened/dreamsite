@@ -71,7 +71,7 @@
         }
         $("html,body").animate(
           {
-            scrollTop: target.offset().top - 80
+            scrollTop: target.offset().top - 120
           },
           700
         );
@@ -94,17 +94,17 @@
     $(document).on("scroll", onScroll);
 
     //smoothscroll
-    $('a[href^="#"]').on("click", function(e) {
+  $('a[href^="#"]').on("click", function(e) {
       e.preventDefault();
       $(document).off("scroll");
 
       $("a").each(function() {
         $(this).removeClass("active");
       });
-      $(this).addClass("active");
 
-      var target = this.hash,
-        menu = target;
+      $(this).addClass("active");
+       var target = this.hash,
+      menu = target;
       var target = $(this.hash);
       $("html, body")
         .stop()
@@ -121,7 +121,7 @@
         );
     });
 
-    $('#toTopBtn').click(function() {
+  $('#toTopBtn').click(function() {
       $("html, body").animate({
         scrollTop: 0
       }, 1000);
