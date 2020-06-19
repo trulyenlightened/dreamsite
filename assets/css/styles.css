@@ -2,7 +2,19 @@
 primary color: #0096de
 secondary color:#04a7cf
 */
+#preloader img{
 
+transform: scale(1);
+  animation: myfirst 7s 2;
+   
+}
+@keyframes myfirst {
+  0%   {transform: scale(1);}
+  25%  {transform: scale(-1); }
+  50%  {transform: scale(1);}
+  75%  {transform: scale(-1);}
+  100% {transform: scale(1) }
+}
 .logo-block{
   width: 320px;
     justify-content: left;

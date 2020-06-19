@@ -20,9 +20,9 @@ primary color: #0096de
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/templatemo-art-factory.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/templatemo-art-factory.css?v=2">
     <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css?v=2">
 
     </head>
 
@@ -30,11 +30,12 @@ primary color: #0096de
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
-        <div class="jumper">
+        <img src="assets/images/white-Icon-logo.png">
+       <!--  <div class="jumper">
             <div></div>
             <div></div>
             <div></div>
-        </div>
+        </div> -->
     </div>
     <!-- ***** Preloader End ***** -->
 
